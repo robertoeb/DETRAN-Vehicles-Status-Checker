@@ -34,7 +34,7 @@ class VehicleController {
    * @param {Response} ctx.response
    */
   async store({ request, response }) {
-    const vehicleData = request.only(["placa", "chassi"]);
+    const vehicleData = request.post();
 
     const vehicle = await Vehicle.create(vehicleData);
 

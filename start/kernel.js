@@ -37,7 +37,9 @@ const globalMiddleware = [
 const namedMiddleware = {
   auth: "Adonis/Middleware/Auth",
   guest: "Adonis/Middleware/AllowGuestOnly",
-  selectVehicle: "App/Middleware/SelectVehicle"
+  selectVehicle: "App/Middleware/SelectVehicle",
+  checkVehicle: "App/Middleware/CheckVehicle",
+  antiCaptcha: "App/Middleware/AntiCaptcha"
 };
 
 /*

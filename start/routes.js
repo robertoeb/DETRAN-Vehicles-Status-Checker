@@ -22,7 +22,7 @@ Route.get("/", () => {
 
 Route.get("vehicles", "VehicleController.index");
 
-Route.post("vehicles", "VehicleController.store");
+Route.post("vehicles", "VehicleController.store").middleware(["checkVehicle"]);
 
 Route.get("vehicles/:id", "VehicleController.show").middleware([
   "selectVehicle"
@@ -35,3 +35,5 @@ Route.patch("vehicles/:id", "VehicleController.update").middleware([
 Route.delete("vehicles/:id", "VehicleController.destroy").middleware([
   "selectVehicle"
 ]);
+
+Route.get("check", "CheckVehicleController.index").middleware(["checkVehicle"]);
