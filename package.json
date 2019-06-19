@@ -1,5 +1,5 @@
 {
-  "name": "Detran vehicle status checker",
+  "name": "vehicle-status-checker",
   "version": "1.0.0",
   "adonis-version": "4.1.0",
   "description": "An API to check the status of a vehicle at DETRAN-MG",
